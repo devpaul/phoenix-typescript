@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Phoenix TypeScript</title>
+
+	<meta name="description" content="Phoenix TypeScript">
+	<meta name="author" content="Dylan Schiemann">
+	<meta name="author" content="Paul Shannon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="node_modules/reveal.js/css/theme/sky.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+	<link rel="stylesheet" href="resources/main.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+
+<div class="reveal">
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section class="intro">
+			<h2>Welcome!</h2>
+
+			<div class="two-column">
+				<div class="image">
+					<img src="images/phxts.jpg" class="removeFormatting">
+				</div>
+				<div>
+					<ul>
+						<li>6:30 - Meet & Greet, Dinner</li>
+						<li>7:00 - Announcements</li>
+						<li>7:10 - Getting Started w/ TypeScript</li>
+						<li>7:45 - Questions & Open Code</li>
+					</ul>
+				</div>
+			</div>
+			<footer>
+
+			</footer>
+		</section>
+
+		<section>
+			<h2>Announcements</h2>
+		</section>
+
+		<section>
+			<h3>TypeScript 2.4 Released</h3>
+
+			<div class="two-column">
+				<div class="image">
+					<img src="images/typescript.png">
+				</div>
+				<div>
+					<ul>
+						<li>Infer generic return types</li>
+						<li>Improved generic handling</li>
+						<li>Enums with string values</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h3>A-Frame Typings</h3>
+
+			<div class="two-column">
+				<div>
+					<img src="images/aframe.jpg">
+				</div>
+				<div>
+					<p>We will be merging aframe typings soon into DefinitelyTyped</p>
+
+					<pre><code data-trim data-noescape>
+						npm install @types/aframe
+					</code></pre>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h3>Intern 4 beta</h3>
+
+			<div class="two-column">
+				<div class="image">
+					<img class="medium" src="images/intern.png">
+				</div>
+				<div>
+					<p>The Intern testing framework has been rewritten from the ground-up in TypeScript</p>
+
+					<pre><code data-trim data-noescape>
+						npm install intern@next
+					</code></pre>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h3>Next Meetup</h3>
+
+			<h4>July 11th</h4>
+
+			<p>Topic: TBD</p>
+		</section>
+	</div>
+</div>
+
+<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="node_modules/reveal.js/js/reveal.js"></script>
+<script src="src/index.js"></script>
+
+</body>
+</html>
