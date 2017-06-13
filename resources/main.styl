@@ -21,12 +21,30 @@
 		flex-direction: column;
 	}
 
+	.image-left {
+		display: inline-flex;
+
+		> * {
+			display: inline-block;
+		}
+	}
+
 	.two-column {
 		display: flex;
 		justify-content: center;
 
 		> * {
 			flex: 1 1;
+		}
+
+		.left {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.right {
+			display: flex;
+			justify-content: flex-start;
 		}
 
 		&.medium {
@@ -55,10 +73,7 @@
 
 	.slides > section {
 		div.image {
-			display: flex;
-			flex: 0 0 400px;
 			min-width: 400px;
-			justify-content: flex-end;
 			align-content: center;
 		}
 
