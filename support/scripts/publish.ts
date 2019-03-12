@@ -1,5 +1,5 @@
 import {join} from "path";
-import * as cpy from 'cpy';
+import cpy from 'cpy';
 import {closeSync, openSync} from "fs";
 import {distDirectory} from "./constants";
 
