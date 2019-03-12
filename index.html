@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Phoenix TypeScript</title>
+
+	<meta name="description" content="Phoenix TypeScript">
+	<meta name="author" content="Dylan Schiemann">
+	<meta name="author" content="Paul Shannon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="node_modules/reveal.js/css/theme/sky.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+	<link rel="stylesheet" href="resources/main.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+
+<div class="reveal">
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section class="intro full">
+			<img src="./assets/images/phxts.jpg" class="removeFormatting top-right">
+			<div class="center-full-container">
+				<h2>Welcome</h2>
+				<div class="agenda">
+					<div class="time">6:30</div>
+					<div class="detail">Meet & Greet Dinner</div>
+					<div class="time">6:50</div>
+					<div class="detail">TypeScript News</div>
+					<div class="time">7:00</div>
+					<div class="detail">Synchronous Orchestration of Asynchronous Tasks</div>
+					<div class="time">8:10</div>
+					<div class="detail">Type This Way</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Thanks to our Sponsors</h2>
+
+			<div class="sponsors">
+				<span class="boxel"><img width="250" src="./assets/images/drivetime.png" class="removeFormatting"></span>
+				<span class="amp">&amp;</span>
+				<span class="boxel" style="padding-top: 20px"><img width="250" src="./assets/images/sitepen.png" class="removeFormatting"></span>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<img src="./assets/images/talkscript.png">
+			</div>
+			<ul class="no-style spaced">
+				<li><a href="talkscript.fm">Episode 30: Idle until urgent</a></li>
+				<li><a href="talkscript.fm">Episode 29: TC39 |> Dreams</a></li>
+				<li class="twitter no-style"><a href="https://twitter.com/talkscript">@TalkScript</a></li>
+			</ul>
+			<aside class="notes">
+				<ul>
+					<li>Episode 30 covers building applications for performance using requestIdleCallback</li>
+					<li>Episode 29 covers TC39 proposal process and 3 proposals pipe, class fields, and decorators</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h2>TypeScript News</h2>
+			<ul>
+				<li><a href="https://medium.com/palantir/tslint-in-2019-1a144c2317a9">TSLint and ESLint are merging</a></li>
+				<li><a href="https://npm.community/t/tink-faq-a-package-unwinder-for-javascript/3191">tink embraces TypeScript</a></li>
+				<li><a href="https://blog.logrocket.com/when-to-use-never-and-unknown-in-typescript-5e4d6c5799ad">When to use never and unknown</a></li>
+			</ul>
+			<aside class="notes">
+				tink is npm's next gen loader to replace `npm`. It uses ts-node to run TypeScript files natively.
+			</aside>
+		</section>
+
+		<section>
+			<h3>TypeScript 3.4</h3>
+
+			<p>Expected late March</p>
+		</section>
+
+		<section>
+			<ul>
+				<li>Higher order function type inference</li>
+				<li>Improved support for read-only arrays and tuples</li>
+				<li>Const contexts for literal expressions</li>
+				<li>Partial type argument inference</li>
+				<li>globalThis</li>
+			</ul>
+			<aside class="notes">
+				<ul>
+					<li>Generics used in functions passed as params will be inferred</li>
+					<li>deep readonly</li>
+					<li>as const asserts deep readonly</li>
+					<li>use _ (underscore) in generic type arguments; e.g. &lt;_, _, string&gt;</li>
+					<li>globalThis is TC39 stage 3</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h2>&lt;/CommunityUpdate&gt;</h2>
+		</section>
+	</div>
+</div>
+
+<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="node_modules/reveal.js/js/reveal.js"></script>
+<script src="src/index.js"></script>
+
+</body>
+</html>
