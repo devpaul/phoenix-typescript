@@ -1,1 +1,134 @@
-.reveal .boxel{height:25vw;max-height:250px;max-width:250px;padding-left:15px;padding-right:15px}.reveal .removeFormatting{border:none !important;background:none !important;box-shadow:none !important;margin:0}.reveal .absolute-center{position:absolute;top:0;width:100%;bottom:0;display:flex;justify-content:center;align-items:center;color:#fff;align-content:center;flex-direction:column}.reveal .image-left{display:inline-flex;}.reveal .image-left > *{display:inline-block}.reveal .two-column{display:flex;justify-content:center;}.reveal .two-column > *{flex:1 1}.reveal .two-column .left{display:flex;justify-content:flex-end}.reveal .two-column .right{display:flex;justify-content:flex-start}.reveal .two-column.medium > *{max-width:500px}.reveal ul .no-style{list-style:none;margin-left:-36px}.reveal ul .twitter:before{content:'';display:inline-block;height:32px;width:32px;background-size:32px 32px;background-repeat:no-repeat;background-image:url("../images/Twitter_bird_logo_2012.svg.png");margin-right:4px}.reveal ul .github:before{content:'';display:inline-block;height:32px;width:32px;background-size:32px 32px;background-repeat:no-repeat;background-image:url("../images/GitHub-Mark/PNG/GitHub-Mark-32px.png");margin-right:4px}.reveal .slides > section div.image{min-width:400px;align-content:center}.reveal .slides > section.full{height:100%;width:100%}.reveal .slides > section .background-image-container{top:0;left:0;position:absolute;opacity:.5;}.reveal .slides > section .background-image-container img{border:none;margin:0}.reveal .slides > section img.strip{background:none;border:none;box-shadow:none}.reveal .slides > section img.full{max-width:100%;max-height:100%}.reveal .slides > section img.medium{min-height:20vh}.reveal .slides > section img.gh-mark{height:49px;margin:0 10px 0 0}.reveal .slides > section .mosaic{display:flex;max-width:100%;flex-wrap:wrap;justify-content:center;}.reveal .slides > section .mosaic > *{margin:10px}
+.reveal .agenda {
+  display: grid;
+  grid-template-columns: 3em auto;
+  grid-column-gap: 0.6em;
+  text-align: left;
+  width: 40vw;
+}
+.reveal .agenda .time {
+  grid-column: 1/2;
+}
+.reveal .agenda .detail {
+  grid-column: 2/2;
+}
+.reveal .top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.reveal .center-full-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.reveal .sponsors {
+  display: flex;
+  justify-content: center;
+}
+.reveal .sponsors .amp {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 112px;
+  font-size: 5rem;
+  margin: 0 1rem;
+}
+.reveal .removeFormatting {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  margin: 0;
+}
+.reveal .absolute-center {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  align-content: center;
+  flex-direction: column;
+}
+.reveal .two-column {
+  display: flex;
+  justify-content: center;
+}
+.reveal .two-column > * {
+  flex: 1 1;
+}
+.reveal .two-column.medium > * {
+  max-width: 500px;
+}
+.reveal ul.no-style {
+  list-style-type: none;
+}
+.reveal ul.spaced li {
+  margin-bottom: 20px;
+}
+.reveal ul .no-style {
+  list-style: none;
+  margin-left: -36px;
+}
+.reveal ul .twitter:before {
+  content: '';
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/twitter.png");
+  margin-right: 4px;
+}
+.reveal ul .github:before {
+  content: '';
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png");
+  margin-right: 4px;
+}
+.reveal .slides > section.full {
+  height: 100%;
+  width: 100%;
+}
+.reveal .slides > section .background-image-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.5;
+}
+.reveal .slides > section .background-image-container img {
+  border: none;
+  margin: 0;
+}
+.reveal .slides > section img.strip {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.reveal .slides > section img.full {
+  max-width: 100%;
+  max-height: 100%;
+}
+.reveal .slides > section img.medium {
+  min-height: 20vh;
+}
+.reveal .slides > section img.gh-mark {
+  height: 49px;
+  margin: 0 10px 0 0;
+}
+.reveal .slides > section .mosaic {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reveal .slides > section .mosaic > * {
+  margin: 10px;
+}

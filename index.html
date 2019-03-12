@@ -40,59 +40,89 @@
 <div class="reveal">
 	<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
-		<section class="intro">
-			<h2>Welcome!</h2>
-
-			<div>
-				<ul>
-					<li>Meet & Greet/Dinner</li>
-					<li>PHXTS, ng-phx, and TypeScript News</li>
-					<li>Decorators</li>
-					<li>Angular 5</li>
-				</ul>
+		<section class="intro full">
+			<img src="./assets/images/phxts.jpg" class="removeFormatting top-right">
+			<div class="center-full-container">
+				<h2>Welcome</h2>
+				<div class="agenda">
+					<div class="time">6:30</div>
+					<div class="detail">Meet & Greet Dinner</div>
+					<div class="time">6:50</div>
+					<div class="detail">TypeScript News</div>
+					<div class="time">7:00</div>
+					<div class="detail">Synchronous Orchestration of Asynchronous Tasks</div>
+					<div class="time">8:10</div>
+					<div class="detail">Type This Way</div>
+				</div>
 			</div>
 		</section>
 
 		<section>
 			<h2>Thanks to our Sponsors</h2>
 
-			<div style="display: flex; justify-content: center">
-				<span class="boxel" style="padding-top: 20px">ng-phx</span>
-				<span class="boxel"><img src="images/phxts.jpg" class="removeFormatting"></span>
-				<span class="boxel"><img width="250" src="images/drivetime.png" class="removeFormatting"></span>
-				<span class="boxel" style="padding-top: 20px"><img width="250" src="images/sitepen.png" class="removeFormatting"></span>
+			<div class="sponsors">
+				<span class="boxel"><img width="250" src="./assets/images/drivetime.png" class="removeFormatting"></span>
+				<span class="amp">&amp;</span>
+				<span class="boxel" style="padding-top: 20px"><img width="250" src="./assets/images/sitepen.png" class="removeFormatting"></span>
 			</div>
 		</section>
 
 		<section>
-			<h2>Announcements</h2>
+			<div>
+				<img src="./assets/images/talkscript.png">
+			</div>
+			<ul class="no-style spaced">
+				<li><a href="talkscript.fm">Episode 30: Idle until urgent</a></li>
+				<li><a href="talkscript.fm">Episode 29: TC39 |> Dreams</a></li>
+				<li class="twitter no-style"><a href="https://twitter.com/talkscript">@TalkScript</a></li>
+			</ul>
+			<aside class="notes">
+				<ul>
+					<li>Episode 30 covers building applications for performance using requestIdleCallback</li>
+					<li>Episode 29 covers TC39 proposal process and 3 proposals pipe, class fields, and decorators</li>
+				</ul>
+			</aside>
 		</section>
 
 		<section>
-			<h3>TypeScript 2.7 Released</h3>
-
-			<p>Stricter property checks, ESM interop, symbol properties</p>
-			<p class="fragment">TypeScript 2.8 expected late March</p>
+			<h2>TypeScript News</h2>
+			<ul>
+				<li><a href="https://medium.com/palantir/tslint-in-2019-1a144c2317a9">TSLint and ESLint are merging</a></li>
+				<li><a href="https://npm.community/t/tink-faq-a-package-unwinder-for-javascript/3191">tink embraces TypeScript</a></li>
+				<li><a href="https://blog.logrocket.com/when-to-use-never-and-unknown-in-typescript-5e4d6c5799ad">When to use never and unknown</a></li>
+			</ul>
+			<aside class="notes">
+				tink is npm's next gen loader to replace `npm`. It uses ts-node to run TypeScript files natively.
+			</aside>
 		</section>
 
 		<section>
-			<h3>Stimulus</h3>
+			<h3>TypeScript 3.4</h3>
 
-			<p>a new TS-based framework by Basecamp</p>
+			<p>Expected late March</p>
 		</section>
 
 		<section>
-			<h2><a href="https://tsconf.io">TSConf 2018</a></h2>
-
-			<h4>March 12</h4>
-
-			<p>Seattle</p>
+			<ul>
+				<li>Higher order function type inference</li>
+				<li>Improved support for read-only arrays and tuples</li>
+				<li>Const contexts for literal expressions</li>
+				<li>Partial type argument inference</li>
+				<li>globalThis</li>
+			</ul>
+			<aside class="notes">
+				<ul>
+					<li>Generics used in functions passed as params will be inferred</li>
+					<li>deep readonly</li>
+					<li>as const asserts deep readonly</li>
+					<li>use _ (underscore) in generic type arguments; e.g. &lt;_, _, string&gt;</li>
+					<li>globalThis is TC39 stage 3</li>
+				</ul>
+			</aside>
 		</section>
 
 		<section>
-			<h3>{AZ} Webdevs</h3>
-
-			<p>https://azwebdevs.org/ has a Slack group for Phoenix web developers</p>
+			<h2>&lt;/CommunityUpdate&gt;</h2>
 		</section>
 	</div>
 </div>
