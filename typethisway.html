@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Type This Way</title>
+
+    <meta name="description" content="Type This Way">
+    <meta name="author" content="Dylan Schiemann">
+    <meta name="author" content="Paul Shannon">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/sky.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="resources/main.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section class="intro full">
+            <img src="./assets/images/phxts.jpg" class="removeFormatting top-right">
+            <div class="center-full-container">
+                <h2>Type This Way</h2>
+                <div>
+                    In Type This Way, we take a look at JavaScript code and ask members of the audience to show us how
+                    they'd rewrite it using TypeScript.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>#1: The Random</h2>
+
+            <pre><code data-trim data-noescape>
+                const chars = 'abcdefghijklmnopqrstuvwxyz';
+
+                function random(type) {
+                  switch (type) {
+                    case 'char':
+                      return chars[Math.min(Math.random() * chars.length)];
+                    case 'integer':
+                      return Math.min(Math.random() * 10);
+                    case 'float':
+                      return Math.random();
+                  }
+                }
+
+                const letter = random('char');
+                const integer = random('integer');
+                const real = random('float');
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>#2: Deserialized Types</h2>
+
+            <pre><code data-trim data-noescape>
+                const bag = {
+                  a: "string",
+                  b: 1,
+                  c: () => {},
+                  d: Symbol()
+                };
+
+                const result = JSON.parse(JSON.stringify(bag));
+
+                const str = result.a;
+                const num = result.b;
+                const err = result.c; // Error: undefined
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>#3: The Factory</h2>
+
+            <pre><code data-trim data-noescape>
+                const base = {
+                  get name() {
+                    return 'World';
+                  }
+                }
+
+                const config = {
+                  message: 'Hello',
+                  log() {
+                    const num: number = this.message; // this should be a type error
+                    console.log(`${this.message} ${this.name}`);
+                  },
+                  another() {
+                    this.log();
+                  }
+                }
+
+                const combined = Object.assign({}, base, config);
+            </code></pre>
+        </section>
+    </div>
+</div>
+
+<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="node_modules/reveal.js/js/reveal.js"></script>
+<script src="src/index.js"></script>
+
+</body>
+</html>
